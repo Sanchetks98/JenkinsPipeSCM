@@ -2,19 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Build') {
             steps {
-                echo 'Hello World'
+                echo 'Build is completed'
             }
         }
-        stage('Hello1') {
+        stage('Deploy') {
             steps {
-                echo 'Hello World1'
+                echo 'Deployment is completed'
             }
         }
-        stage('Hello2') {
+        stage('Test') {
             steps {
-                echo 'Hello World2'
+                echo 'Testing is completed'
             }
         }
     }
